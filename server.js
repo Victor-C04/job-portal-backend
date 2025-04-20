@@ -9,9 +9,10 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-    origin: ['http://localhost:5173', 'https://job-portal-frontend-orcin-omega.vercel.app/'], // Your frontend URL
+    origin: [ 'https://job-portal-frontend-orcin-omega.vercel.app'], // Your frontend URL
     credentials: true
   }));
+  
 app.use(express.json());
 
 // Connect to MongoDB
